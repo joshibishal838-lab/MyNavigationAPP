@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:id="@+id/nav_graph"
-
     app:startDestination="@id/homeFragment">
-
 
     <fragment
         android:id="@+id/homeFragment"
@@ -19,9 +14,7 @@
         <action
             android:id="@+id/action_homeFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
-
     </fragment>
-
 
     <fragment
         android:id="@+id/menuFragment"
@@ -32,9 +25,7 @@
         <action
             android:id="@+id/action_menuFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
-
     </fragment>
-
 
     <fragment
         android:id="@+id/detailFragment"
@@ -44,10 +35,8 @@
 
         <argument
             android:name="subject"
-            app:argType="string"
-            android:defaultValue="선택 없음" />
-
+            android:defaultValue="None"
+            app:argType="string" />
     </fragment>
-
 
 </navigation>
